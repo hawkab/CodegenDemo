@@ -9,10 +9,10 @@ import ru.hwak.dto.RequestDto;
  * Контроллер обработки тестовых запросов
  *
  * @author olshansky
- * @since 24.01.2025
+ * @since 29.01.2025
  */
 @RestController
-@RequestMapping("/rule-apply")
+@RequestMapping("/testC")
 @RequiredArgsConstructor
 public class CController {
 

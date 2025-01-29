@@ -13,7 +13,7 @@
 	<version>${revision}</version>
 	<packaging>pom</packaging>
 	<name>CodegenDemo</name>
-	<description>Представление о чистой архитектуре с использованием DSL</description>
+	<description>Представление автоматической генерации Spring WebClient на основе RestController</description>
 	<modules>
 		<module>service</module>
 		<module>client</module>

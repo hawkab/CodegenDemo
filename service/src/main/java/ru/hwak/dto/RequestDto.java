@@ -7,6 +7,12 @@ import java.util.UUID;
 
 import lombok.Data;
 
+/**
+ * Формат тестового запроса
+ *
+ * @author olshansky
+ * @since 29.01.2025
+ */
 @Data
 public class RequestDto implements Serializable {
     private String id;

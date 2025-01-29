@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * Запускатор приложения.
  *
  * @author olshansky
- * @since 24.01.2025
+ * @since 29.01.2025
  */
 @SpringBootApplication
 public class CodegenDemoApplication {

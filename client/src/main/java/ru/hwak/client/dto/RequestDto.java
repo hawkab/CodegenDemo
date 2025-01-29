@@ -48,7 +48,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   RequestDto.JSON_PROPERTY_COUNT_OF_UNSUCCESSFUL_LOGIN,
   RequestDto.JSON_PROPERTY_AMOUNT
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-01-25T23:00:45.143445272+03:00[Europe/Moscow]", comments = "Generator version: 7.11.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-01-29T15:49:38.519009757+03:00[Europe/Moscow]", comments = "Generator version: 7.11.0")
 public class RequestDto {
   public static final String JSON_PROPERTY_ID = "id";
   @javax.annotation.Nullable

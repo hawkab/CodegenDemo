@@ -4,6 +4,12 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.reactive.function.client.WebClient;
 
+/**
+ * Конфигурация web-client.
+ *
+ * @author olshansky
+ * @since 29.01.2025
+ */
 @Configuration
 public class WebClientConfig {
 

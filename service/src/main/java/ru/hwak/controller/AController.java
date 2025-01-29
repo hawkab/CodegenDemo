@@ -2,7 +2,6 @@ package ru.hwak.controller;
 
 import org.springframework.web.bind.annotation.*;
 
-import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import ru.hwak.dto.RequestDto;
 
@@ -10,12 +9,12 @@ import ru.hwak.dto.RequestDto;
  * Контроллер обработки тестовых запросов
  *
  * @author olshansky
- * @since 24.01.2025
+ * @since 29.01.2025
  */
 @RestController
-@RequestMapping("/rule-apply")
+@RequestMapping("/testA")
 @RequiredArgsConstructor
-public class RuleController {
+public class AController {
 
     @GetMapping
     public RequestDto testGet() {
