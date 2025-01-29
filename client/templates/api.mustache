@@ -1,0 +1,35 @@
+package {{package}};
+
+import org.springframework.stereotype.Service;
+import org.springframework.web.reactive.function.client.WebClient;
+
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+
+{{#imports}}import {{import}};
+{{/imports}}
+
+@Slf4j
+@Service
+@RequiredArgsConstructor
+public class {{classname}} {
+
+    private final WebClient {{#lambda.camelcase}}{{classname}}{{/lambda.camelcase}}WebClient;
+
+{{#operations}}
+    {{#operation}}
+    {{#isDeprecated}}
+    @Deprecated
+    {{/isDeprecated}}
+    public {{#returnType}}{{{.}}} {{/returnType}}{{^returnType}}void {{/returnType}}{{operationId}}({{#allParams}}{{{dataType}}} {{paramName}}{{^-last}}, {{/-last}}{{/allParams}}) {
+        return {{#lambda.camelcase}}{{classname}}{{/lambda.camelcase}}WebClient.{{httpMethod.toLowerCase}}()
+                .uri(uriBuilder -> uriBuilder.path("{{path}}").build())
+                {{#bodyParam}}.bodyValue({{paramName}}){{/bodyParam}}
+                .retrieve()
+                .bodyToMono({{#returnType}}{{returnType}}{{/returnType}}.class)
+                .block();
+    }
+
+    {{/operation}}
+{{/operations}}
+}

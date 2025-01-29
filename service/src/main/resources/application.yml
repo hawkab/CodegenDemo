@@ -1,0 +1,10 @@
+springdoc:
+  api-docs:
+    enabled: true
+    version: OPENAPI_3_0
+  swagger-ui:
+    enabled: true
+
+server:
+  servlet:
+    context-path: /
