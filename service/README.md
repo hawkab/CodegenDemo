@@ -1,4 +1,4 @@
-# `service` Module Documentation
+# Module service
 
 ## Overview
 
